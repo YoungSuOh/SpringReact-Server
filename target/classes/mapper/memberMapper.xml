@@ -8,7 +8,7 @@
 <mapper namespace="member.dao.MemberDAO">
 
 <select id="login" parameterType="Map" resultType="memberDTO">
-	SELECT * FROM member WHERE id=#{id} and pwd=#{pwd}
+	SELECT * FROM Member WHERE id=#{id} and pwd=#{pwd}
 </select>
 
 
