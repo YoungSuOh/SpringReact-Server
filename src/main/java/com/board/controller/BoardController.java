@@ -20,7 +20,7 @@ import board.service.BoardService;
 //@Controller
 @RestController // @ResponseBody 없어도 바로 브라우저로 뿌려줌
 @RequestMapping(value="/board")
-@CrossOrigin(origins = "http://localhost:5173", allowCredentials = "true")
+@CrossOrigin(origins = "http://211.188.51.105:3000", allowCredentials = "true")
 public class BoardController {
 	
 	@Autowired
