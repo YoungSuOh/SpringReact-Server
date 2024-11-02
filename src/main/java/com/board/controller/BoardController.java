@@ -27,7 +27,7 @@ public class BoardController {
 	private BoardService boardService;
 	
 //	@RequestMapping(value="/boardWrite", method = RequestMethod.POST)
-	@PostMapping(value="/boardWrite")
+	@GetMapping(value="/boardWrite")
 //	@ResponseBody
 	public void boardWrite(@RequestParam String subject, @RequestParam String content) {
 		System.out.println(subject);
