@@ -20,14 +20,14 @@ import board.service.BoardService;
 //@Controller
 @RestController // @ResponseBody 없어도 바로 브라우저로 뿌려줌
 @RequestMapping(value="/board")
-@CrossOrigin(origins = "http://211.188.51.105:3000", allowCredentials = "true")
+@CrossOrigin(origins = "http://211.188.51.105", allowCredentials = "true")
 public class BoardController {
 	
 	@Autowired
 	private BoardService boardService;
 	
 //	@RequestMapping(value="/boardWrite", method = RequestMethod.POST)
-	@PostMapping(value="/boardWrite")
+	@GetMapping(value="/boardWrite")
 //	@ResponseBody
 	public void boardWrite(@RequestParam String subject, @RequestParam String content) {
 		System.out.println(subject);

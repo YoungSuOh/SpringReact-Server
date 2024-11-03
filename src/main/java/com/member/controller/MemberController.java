@@ -14,19 +14,19 @@ import member.service.MemberService;
 
 /* SpringReact/src/main/member/controller/MemberController.java */
 @Controller
-@RequestMapping(value="/member")
-@CrossOrigin(origins = "http://211.188.51.105:3000", allowCredentials = "true")
+@RequestMapping(value = "/member")
+@CrossOrigin(origins = "http://211.188.51.105", allowCredentials = "true")
 public class MemberController {
-    @Autowired
-    MemberService memberService;
-    
-    @PostMapping("/login")
-    @ResponseBody    
-    public String login(@RequestBody Map<String, String> credentials) {
-        String id = credentials.get("id");
-        String pwd = credentials.get("pwd");
-        return memberService.login(id, pwd);
-    }
+	@Autowired
+	MemberService memberService;
+
+	@PostMapping("/login")
+	@ResponseBody	
+	public String login(@RequestBody Map<String, String> credentials) {
+		String id = credentials.get("id");
+		String pwd = credentials.get("pwd");
+		return memberService.login(id, pwd);
+	}
 //    public String login(@RequestBody String id,@RequestBody String pwd) {
 //        return memberService.login(id,  pwd);
 //    }
