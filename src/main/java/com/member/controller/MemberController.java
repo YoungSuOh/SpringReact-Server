@@ -15,7 +15,7 @@ import member.service.MemberService;
 /* SpringReact/src/main/member/controller/MemberController.java */
 @Controller
 @RequestMapping(value = "/member")
-@CrossOrigin(origins = "http://211.188.51.105", allowCredentials = "true")
+@CrossOrigin(origins = "http://www.springreact.store", allowCredentials = "true")
 public class MemberController {
 	@Autowired
 	MemberService memberService;
