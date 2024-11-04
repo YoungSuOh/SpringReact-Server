@@ -20,7 +20,7 @@ import board.service.BoardService;
 //@Controller
 @RestController // @ResponseBody 없어도 바로 브라우저로 뿌려줌
 @RequestMapping(value="/board")
-@CrossOrigin(origins = "http://211.188.51.105", allowCredentials = "true")
+@CrossOrigin(origins = "http://www.springreact.store", allowCredentials = "true")
 public class BoardController {
 	
 	@Autowired
