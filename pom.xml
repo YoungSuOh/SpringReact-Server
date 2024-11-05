@@ -222,7 +222,13 @@
 			<artifactId>junit</artifactId>
 			<version>4.7</version>
 			<scope>test</scope>
-		</dependency>        
+		</dependency>     
+		// swagger-ui
+		<dependency>
+    			<groupId>io.springfox</groupId>
+   			 <artifactId>springfox-boot-starter</artifactId>
+    			<version>3.0.0</version>
+		</dependency>
 	</dependencies>
     <build>
         <plugins>
