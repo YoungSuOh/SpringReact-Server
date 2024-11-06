@@ -8,13 +8,18 @@
 		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
-	
-	<context:component-scan base-package="spring.conf"></context:component-scan>
-	<context:component-scan base-package="member.dao"></context:component-scan>
-	<context:component-scan base-package="member.service"></context:component-scan>
+
+	<context:component-scan
+		base-package="spring.conf"></context:component-scan>	
+
+	<context:component-scan
+		base-package="member.dao"></context:component-scan>
+	<context:component-scan
+		base-package="member.service"></context:component-scan>
 	<context:component-scan base-package="board.dao"></context:component-scan>
-	<context:component-scan base-package="board.service"></context:component-scan>
-	
-	
-		
+	<context:component-scan
+		base-package="board.service"></context:component-scan>
+
+
+
 </beans>
