@@ -16,7 +16,7 @@ import member.service.MemberService;
 @Api(value = "MemberController", description = "회원 관리 API") // Controller에 대한 Swagger 설명
 @RestController
 @RequestMapping(value = "/member")
-@CrossOrigin(origins = "http://www.springreact.store", allowCredentials = "true")
+@CrossOrigin(origins = "https://www.springreact.store", allowCredentials = "true")
 public class MemberController {
 
     @Autowired
