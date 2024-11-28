@@ -19,7 +19,7 @@ import board.service.BoardService;
 @Api(value = "BoardController", description = "게시판 API") // Controller에 대한 Swagger 설명
 @RestController
 @RequestMapping(value = "/board")
-@CrossOrigin(origins = "http://www.springreact.store", allowCredentials = "true")
+@CrossOrigin(origins = "https://www.springreact.store", allowCredentials = "true")
 public class BoardController {
 
     @Autowired
